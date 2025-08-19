@@ -15,6 +15,8 @@ El objetivo es reducir tiempos de respuesta, mejorar la seguridad de las calles 
 ## Identidad Gráfica
 
 ![alt text](image.png)
+<img width="200" height="200" alt="LAKID" src="https://github.com/user-attachments/assets/1ac23853-96fa-47a6-bdb6-ffa1669e0ff6" />
+
 ---
 
 ## Descripción
