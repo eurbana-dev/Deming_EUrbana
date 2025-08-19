@@ -7,7 +7,7 @@ El notebook y datasets correspondientes se encuentran en el repositorio de **Mac
 
 ## Repositorio relacionado
 
-👉 [Machine Learning E-Urbana](https://github.com/eurbana-dev/Machine-Learning-E-Urbana.git)
+ [Machine Learning E-Urbana](https://github.com/eurbana-dev/Machine-Learning-E-Urbana.git)
 
 En ese repositorio se incluyen:
 
@@ -24,3 +24,4 @@ En ese repositorio se incluyen:
 - El análisis supervisado entrena modelos de clasificación para anticipar fallas y anomalías.  
 - Los datasets etiquetados permiten evaluar el rendimiento de los modelos.  
 - Este trabajo es un insumo para integrar capacidades predictivas en la API y el panel web.
+
