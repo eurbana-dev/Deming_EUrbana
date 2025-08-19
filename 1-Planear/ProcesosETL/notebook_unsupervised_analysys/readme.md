@@ -13,6 +13,8 @@ En ese repositorio se incluye:
 
 - **Notebook No Supervisado:** `ECOLUZ_No_Supervisado.ipynb`
 
+- **Datasets:**
+  `luminarias_clusters.json`
 ---
 
 ## Relación con el Proyecto
@@ -20,4 +22,5 @@ En ese repositorio se incluye:
 - El análisis no supervisado aplica técnicas de clustering para identificar patrones ocultos en los datos.  
 - Permite segmentar zonas críticas y optimizar rutas de mantenimiento sin necesidad de etiquetas previas.  
 - Sirve como base para análisis exploratorios y apoyo en la toma de decisiones estratégicas.
+
 
