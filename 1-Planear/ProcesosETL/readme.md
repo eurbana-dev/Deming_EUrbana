@@ -150,7 +150,7 @@ gantt
 - **Jetpack Compose for Wear OS**
 
 ---
-##Objetos de alto valor
+## 1) Objetos de alto valor
 
 ```mermaid
 flowchart TB
@@ -161,4 +161,61 @@ flowchart TB
     E --> WEA["Wear OS (Kotlin): Alertas • Detalle"]
     E --> DB["MongoDB: Luminarias • Consumo • Usuarios"]
     E --> OPS["Operaciones: Detección • Historial • Estadísticas"]
+```
+
+
+## 2) Entidades Significativas (ER)
+
+```mermaid
+erDiagram
+    LUMINARIA ||--o{ CONSUMO : registra
+    LUMINARIA ||--o{ ALERTA : genera
+    LUMINARIA ||--o{ MANTENIMIENTO : tiene
+    USUARIO }o--o{ ROL : posee
+    USUARIO ||--o{ MANTENIMIENTO : ejecuta
+
+    LUMINARIA {
+      string id
+      string identificador
+      string tipo
+      float lat
+      float lng
+      date fecha_instalacion
+      boolean activo
+    }
+    CONSUMO {
+      string id
+      string luminaria_id
+      datetime timestamp
+      float consumo
+      int lumenes
+      boolean encendida
+    }
+    ALERTA {
+      string id
+      string luminaria_id
+      string severidad  "critica|media|baja"
+      string tipo       "apagada|sobrecalentamiento|anomalia"
+      datetime creada_en
+      boolean atendida
+    }
+    MANTENIMIENTO {
+      string id
+      string luminaria_id
+      string usuario_id
+      datetime fecha
+      string tipo
+      string notas
+    }
+    USUARIO {
+      string id
+      string nombre
+      string apellido
+      string correo
+      string telefono
+    }
+    ROL {
+      string id
+      string nombre "admin|operador|tecnico"
+    }
 ```
