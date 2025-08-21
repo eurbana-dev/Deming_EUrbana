@@ -153,28 +153,12 @@ gantt
 ##Objetos de alto valor
 
 ```mermaid
-mindmap
-  root((Ecoluz))
-    "Luminarias Inteligentes"
-      "Ubicación GPS"
-      "Estado (encendida/falla)"
-      "Consumo / lúmenes"
-    "API REST (Node.js/Express)"
-      "Autenticación JWT"
-      "Endpoints: Consumo, Alertas, Luminarias"
-    "Web Admin (React + Leaflet)"
-      "Mapa interactivo"
-      "Panel de alertas"
-      "Reportes"
-    "Wear OS (Kotlin)"
-      "Alertas en campo"
-      "Detalle de luminaria"
-    "Base de Datos (MongoDB)"
-      "Colección Luminarias"
-      "Colección Consumo"
-      "Usuarios/Roles"
-    "Operaciones"
-      "Detección de fallas"
-      "Historial de mantenimiento"
-      "Estadísticas"
+flowchart TB
+    E["Ecoluz"]
+    E --> L["Luminarias: GPS • Estado • Consumo"]
+    E --> API["API REST (Node/Express): JWT • Endpoints"]
+    E --> WEB["Web Admin (React+Leaflet): Mapa • Alertas • Reportes"]
+    E --> WEA["Wear OS (Kotlin): Alertas • Detalle"]
+    E --> DB["MongoDB: Luminarias • Consumo • Usuarios"]
+    E --> OPS["Operaciones: Detección • Historial • Estadísticas"]
 ```
