@@ -219,3 +219,192 @@ erDiagram
       string nombre "admin|operador|tecnico"
     }
 ```
+---
+
+## 3) Entidad por Objetos (Class Diagram)
+
+```mermaid
+classDiagram
+    class Luminaria {
+      +id: string
+      +identificador: string
+      +tipo: string
+      +lat: float
+      +lng: float
+      +fechaInstalacion: Date
+      +activo: boolean
+    }
+
+    class Consumo {
+      +id: string
+      +luminariaId: string
+      +timestamp: Date
+      +consumo: float
+      +lumenes: int
+      +encendida: boolean
+    }
+
+    class Alerta {
+      +id: string
+      +luminariaId: string
+      +tipo: string
+      +severidad: string
+      +creadaEn: Date
+      +atendida: boolean
+    }
+
+    class Usuario {
+      +id: string
+      +nombre: string
+      +apellido: string
+      +correo: string
+      +telefono: string
+    }
+
+    class Rol {
+      +id: string
+      +nombre: string
+    }
+
+    class Mantenimiento {
+      +id: string
+      +luminariaId: string
+      +usuarioId: string
+      +fecha: Date
+      +tipo: string
+      +notas: string
+    }
+
+    Luminaria "1" --> "many" Consumo
+    Luminaria "1" --> "many" Alerta
+    Usuario "1" --> "many" Mantenimiento
+    Luminaria "1" --> "many" Mantenimiento
+    Usuario "many" --> "many" Rol
+```
+
+---
+
+## 4) Dominio del Proceso (Sequence)
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Sensor as Sensor/Luminaria
+    participant API as API REST (Node)
+    participant DB as MongoDB
+    participant Web as Web Admin (React)
+    participant Wear as Wear OS (Kotlin)
+
+    Sensor->>API: POST /consumo {luminaria, consumo, lumenes, encendida}
+    API->>DB: Insert registro consumo
+    DB-->>API: OK (id)
+    API-->>Sensor: 201 Created
+
+    API->>DB: Evaluar regla -> ¿falla?
+    DB-->>API: Resultado (true/false)
+    alt Falla detectada
+        API->>DB: Insert ALERTA {luminaria, tipo, severidad}
+        API-->>Web: WS/Event: nueva alerta
+        API-->>Wear: Notificación: alerta en campo
+    end
+
+    Web->>API: GET /luminarias, /alertas
+    API->>DB: Query
+    DB-->>API: Datos
+    API-->>Web: JSON (mapa, panel)
+```
+
+---
+
+## 5) Modelo ADL Negocio (Flowchart)
+
+```mermaid
+flowchart TB
+    subgraph Ciudadanía
+      C1["Habitantes"]
+    end
+
+    subgraph Municipio
+      M1["Admin Municipal"]
+      M2["Técnicos de Mantenimiento"]
+    end
+
+    subgraph Ecoluz Plataforma
+      W["Web Admin (decisiones)"]
+      R["Reportes/Estadísticas"]
+      A["API REST"]
+      D["DB (Mongo)"]
+      S["Sensores/Luminarias"]
+      WEAR["Wear OS (campo)"]
+    end
+
+    C1 -->|Reporte de falla| M1
+    M1 -->|Gestiona| W
+    W -->|Solicitud datos| A --> D
+    S -->|Telemetría| A
+    A --> WEAR
+    WEAR -->|Cierra alerta| A
+    A --> R
+    R --> M1
+    M2 --> WEAR
+```
+
+---
+
+## 6) Arquitectura de Capas (Flowchart con subgraphs)
+
+```mermaid
+flowchart TB
+    subgraph Presentacion
+      Web["Web Admin (React + Leaflet)"]
+      Wear["Wear OS (Kotlin/Compose)"]
+    end
+
+    subgraph Aplicacion
+      API["API REST (Express)"]
+      Auth["Auth JWT"]
+    end
+
+    subgraph Dominio
+      DomSrv["Servicios de Dominio"]
+      Reglas["Reglas de alerta/negocio"]
+    end
+
+    subgraph Infraestructura
+      DB[(MongoDB)]
+      Logs["Winston/Morgan"]
+      CI["GitHub Actions"]
+      Maps["Mapas/Geocodificación"]
+    end
+
+    Web --> API
+    Wear --> API
+    API --> Auth
+    API --> DomSrv
+    DomSrv --> Reglas
+    DomSrv --> DB
+    API --> Logs
+    API --> CI
+    Web --> Maps
+```
+
+---
+
+## 7) Arquitectura de la Solución (Flow/Data)
+
+```mermaid
+flowchart LR
+    Sensors["Luminarias/Sensores"] --> Ingest["API /consumo (HTTP/JSON)"]
+    Ingest --> Proc["Validación + Normalización"]
+    Proc --> Rule["Motor de reglas (falla/umbral)"]
+    Rule -->|falla| Alerts["/alertas (crear)"]
+    Proc --> Store[(MongoDB)]
+    Alerts --> NotifyWeb["Web Admin: WS/Event/Pooling"]
+    Alerts --> NotifyWear["Wear OS: Notificación"]
+    Web["React + Leaflet"] --> API["API REST"]
+    Wear["Kotlin/Compose"] --> API
+    API --> Store
+    Web <---> Maps["Leaflet/TileServer"]
+```
+
+---
