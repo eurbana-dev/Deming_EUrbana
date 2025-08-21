@@ -72,8 +72,8 @@ Deming EUrbana implementa el ciclo PHVA (Planificar, Hacer, Verificar, Actuar) d
 
 | Foto | Nombre completo | Rol principal | GitHub | Correo |
 |---|---|---|---|---|
-| **Angel David Reyes Téllez** |  · Documentación ·  | [@angelR003](https://github.com/usuario-github) | Seyersdolphin@outlook.com |
-| https://avatars.githubusercontent.com/u/147024614?v=4" width="48"> | **Luis Iván Márquez Azuara** | Frontend  | [@luisivmaraz ](https://github.com/luisivmaraz) | luisivmaraz03@gmail.com |
+| <img src="https://avatars.githubusercontent.com/u/0?v=4" width="48"> | | **Angel David Reyes Téllez** |   Documentación  | [@angelR003](https://github.com/usuario-github) | Seyersdolphin@outlook.com |
+| https://avatars.githubusercontent.com/u/147024614?v=4" | **Luis Iván Márquez Azuara** | Frontend  | [@luisivmaraz ](https://github.com/luisivmaraz) | luisivmaraz03@gmail.com |
 | https://avatars.githubusercontent.com/u/141973599?v=4 | **Brayn Kalid Reyes Silva** | backend| [@KalidRs ](https://github.com/KalidRs) | brayn4krs@gmail.com |
 | https://avatars.githubusercontent.com/u/115129477?v=4 | **Aldo Tolentino Domingo** | Wear OS · I | [@Aldotd12 ](https://github.com/Aldotd12) | tolentinodomingodiego@gmail.com |
 
