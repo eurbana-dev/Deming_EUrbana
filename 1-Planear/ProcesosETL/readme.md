@@ -151,7 +151,9 @@ gantt
 
 ---
 ##Objetos de alto valor
-```mindmap
+
+```mermaid
+mindmap
   root((Ecoluz))
     "Luminarias Inteligentes"
       "Ubicación GPS"
@@ -159,7 +161,7 @@ gantt
       "Consumo / lúmenes"
     "API REST (Node.js/Express)"
       "Autenticación JWT"
-      "Endpoints Consumo/Alertas/Luminarias"
+      "Endpoints: Consumo, Alertas, Luminarias"
     "Web Admin (React + Leaflet)"
       "Mapa interactivo"
       "Panel de alertas"
@@ -175,5 +177,4 @@ gantt
       "Detección de fallas"
       "Historial de mantenimiento"
       "Estadísticas"
-
 ```
