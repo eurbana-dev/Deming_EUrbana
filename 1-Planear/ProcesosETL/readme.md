@@ -71,7 +71,7 @@ Desarrollar e implantar una plataforma integral que **monitoree, diagnostique y 
 
 ## Organigrama de Trabajo
 ```mermaid
-fflowchart TB
+flowchart TB
     LUIS["Líder / Front-end (Luis)"]
     KALID["Back-end / API (Kalid)"]
     ALDO["Wear OS / Kotlin (Aldo)"]
