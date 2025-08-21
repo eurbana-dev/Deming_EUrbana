@@ -150,3 +150,30 @@ gantt
 - **Jetpack Compose for Wear OS**
 
 ---
+##Objetos de alto valor
+```mindmap
+  root((Ecoluz))
+    "Luminarias Inteligentes"
+      "Ubicación GPS"
+      "Estado (encendida/falla)"
+      "Consumo / lúmenes"
+    "API REST (Node.js/Express)"
+      "Autenticación JWT"
+      "Endpoints Consumo/Alertas/Luminarias"
+    "Web Admin (React + Leaflet)"
+      "Mapa interactivo"
+      "Panel de alertas"
+      "Reportes"
+    "Wear OS (Kotlin)"
+      "Alertas en campo"
+      "Detalle de luminaria"
+    "Base de Datos (MongoDB)"
+      "Colección Luminarias"
+      "Colección Consumo"
+      "Usuarios/Roles"
+    "Operaciones"
+      "Detección de fallas"
+      "Historial de mantenimiento"
+      "Estadísticas"
+
+```
