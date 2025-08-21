@@ -72,19 +72,81 @@ Desarrollar e implantar una plataforma integral que **monitoree, diagnostique y 
 ## Organigrama de Trabajo
 ```mermaid
 flowchart TB
-    PO["Líder / Product Owner"]
-    ARQ["Arquitectura / DevOps"]
-    API["Back-end / API"]
-    WEB["Front-end / Web"]
-    WEA["Wearable / Kotlin"]
-    DATA["ETL & Data Warehouse"]
-    ML["Modelado (Superv./No Superv.)"]
-    QA["QA / Testing"]
-    PO --> ARQ
-    ARQ --> API --> WEB
-    ARQ --> WEA
-    ARQ --> DATA --> ML
-    API --> QA
-    WEB --> QA
-    WEA --> QA
+    DAVID["Documentador / Líder"]
+    KALID["Back-end / API (Kalid)"]
+    LUIS["Front-end / Web (Luis)"]
+    ALDO["Wear OS / Kotlin (Aldo)"]
 
+    DAVID --> KALID
+    DAVID --> LUIS
+    DAVID --> ALDO
+
+
+
+---
+
+##  Tabla de Colaboradores
+
+| Foto | Nombre completo | Rol principal | GitHub | Correo |
+|---|---|---|---|---|
+| <img src="https://avatars.githubusercontent.com/u/0?v=4" width="48"> | **Angel David Reyes Téllez** |   Documentación  | [@angelR003](https://github.com/usuario-github) | Seyersdolphin@outlook.com |
+| <img src= "https://avatars.githubusercontent.com/u/141973599?v=4" width="48">  | **Luis Iván Márquez Azuara** | Frontend  | [@luisivmaraz ](https://github.com/luisivmaraz) | luisivmaraz03@gmail.com |
+| <img src= "https://avatars.githubusercontent.com/u/115129477?v=4"  width="48"> | **Brayn Kalid Reyes Silva** | backend| [@KalidRs ](https://github.com/KalidRs) | brayn4krs@gmail.com |
+| <img src= "https://avatars.githubusercontent.com/u/147024614?v=4"  width="48"> | **Aldo Tolentino Domingo** | Wear OS  | [@Aldotd12 ](https://github.com/Aldotd12) | tolentinodomingodiego@gmail.com |
+
+
+---
+
+## Diagrama de Gantt
+
+
+```mermaid
+gantt
+    title Ecoluz — Cronograma (PHVA)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d-%b
+
+    section P — Planear
+    Modelado del sistema              :done,   p1, 2025-07-25, 2025-08-01
+    Requisitos del sistema            :done,   p2, 2025-07-28, 2025-08-05
+
+    section H — Hacer (Implementación)
+    API REST (Node/Express + MongoDB) :active, h1, 2025-08-01, 2025-08-10
+    Web Admin (React + Leaflet)       :        h2, 2025-08-05, 2025-08-10
+    Wear OS (Kotlin + Retrofit)       :        h3, 2025-08-08, 2025-08-15
+
+    section V — Verificar (Pruebas)
+    Pruebas API + Evidencia           :        v1, 2025-08-16, 2025-08-17
+    Demo y validación con requisitos  :        v2, 2025-08-18, 2025-08-17
+
+    section A — Actuar (Mejoras)
+    Ajustes finales y README          :        a1, 2025-08-20, 2025-08-19
+    Entrega y retroalimentación       :        a2, 2025-08-22, 2025-08-19
+```
+
+---
+
+##  Lista de Tecnologías
+
+**Backend / API**
+- **Node.js** + **Express**
+- **MongoDB** + **Mongoose**
+- **JWT** (autenticación y autorización)
+- **Swagger /** (documentación de endpoints)
+- **CORS** (seguridad)
+
+**Base de Datos**
+- **MongoDB Atlas** (gestión y hosting)
+- Índices para consultas frecuentes
+- Backups semanales
+
+**Frontend Web (Administración)**
+- **React** (con Vite)
+- **React Router** (navegación)
+
+
+**Wearable (Técnicos)**
+- **Kotlin** · **Wear OS 3+**
+- **Jetpack Compose for Wear OS**
+
+---
