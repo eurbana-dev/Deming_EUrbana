@@ -5,7 +5,9 @@
 
 ##  Identidad de Imagen  
 ### Logotipo de la Empresa  
-*(Insertar imagen)*  
+<p align="center">
+  <img src="assets/EUrbanalogo.png" alt="Icono de la Aplicación" width="150"/>
+</p>
 
 ### Logotipo del Producto  
 *(Insertar imagen)*  
@@ -66,7 +68,7 @@ Implementar un prototipo funcional de monitoreo inteligente de luminarias capaz 
         ▼                      ▼                         ▼
 ┌───────────────┐     ┌────────────────┐        ┌───────────────────────┐
 │    Backend     │     │    Frontend    │        │    Documentación      │
-│ Khalid Reyes   │     │ Luis Iván M.A. │        │ Angel D. Reyes T.     │
+│ Kalid Reyes   │     │ Luis Iván M.A. │        │ Angel D. Reyes T.     │
 │                │     │ Aldo T. D.     │        │                       │
 └───────────────┘     └────────────────┘        └───────────────────────┘
 ```
@@ -77,7 +79,7 @@ Implementar un prototipo funcional de monitoreo inteligente de luminarias capaz 
 | Integrante | Matrícula | Rol Principal | Responsabilidades |
 |-----------|-----------|----------------|------------------|
 | **Angel David Reyes Téllez** | 220432 | Documentación | API, PHVA, CI/CD, pruebas |
-| **Brayan Khalid Reyes Silva** | 220244 | Backend | API, endpoints, base de datos |
+| **Brayn Kalid Reyes Silva** | 220244 | Backend | API, endpoints, base de datos |
 | **Aldo Tolentino Domingo** | 220700 | Móvil / Frontend | App smartwatch, interfaz móvil |
 | **Luis Iván Márquez Azuara** | 220401 | Líder / Frontend | Consumo de API, mapas, coordinación |
 
@@ -148,8 +150,8 @@ Como técnico quiero ver luminarias cercanas desde el smartwatch para agilizar r
 ---
 
 ##  API – Repositorio y Documentación  
-Repositorio API: *(insertar link)*  
-Documentación Swagger: *(insertar link)*
+Repositorio API: https://github.com/eurbana-dev/Api_Eurbana  
+Documentación Swagger: https://github.com/eurbana-dev/Api_Eurbana/tree/main/Swagger
 
 ---
 
@@ -172,6 +174,6 @@ Ecoluz Urbana demuestra la viabilidad técnica de un sistema de monitoreo inteli
 
 ##  Integrantes – Equipo LAKID  
 - 220432 — **Angel David Reyes Téllez**  
-- 220244 — **Brayan Khalid Reyes Silva**  
+- 220244 — **Brayn Kalid Reyes Silva**  
 - 220700 — **Aldo Tolentino Domingo**  
 - 220401 — **Luis Iván Márquez Azuara**
