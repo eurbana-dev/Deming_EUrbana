@@ -1,30 +1,31 @@
 #  Ecoluz Urbana – Prototipo de Aplicación Móvil Empresarial  
-**Equipo: LAKID | UTXJ ***
+**Equipo: LAKID | UTXJ**
 
 ---
 
 ##  Identidad de Imagen  
 ### Logotipo de la Empresa  
-> *(Insertar imagen)*  
+*(Insertar imagen)*  
 
 ### Logotipo del Producto  
-> *(Insertar imagen)*  
+*(Insertar imagen)*  
 
 ### Paleta de Colores  
 - Primario: #  
 - Secundario: #  
 - Acento: #  
-> *(Insertar imagen)*  
+*(Insertar imagen)*  
 
 ### Tipografías  
-- Títulos:  
-- Cuerpo de texto:  
+- Títulos  
+- Cuerpo de texto  
 
 ---
 
-##  Descripción General del Prototipo (150–300 palabras)  
+##  Descripción General del Prototipo  
 Ecoluz Urbana es una plataforma inteligente diseñada para optimizar el monitoreo, gestión y mantenimiento del alumbrado público mediante tecnologías IoT, análisis de datos en tiempo real y herramientas digitales accesibles para administradores municipales, operadores y técnicos de campo.  
-El sistema integra una **API REST**, un **dashboard administrativo web**, una aplicación **Wear OS** para técnicos, el prototipado de una aplicacion movil y sensores conectados que envían información sobre consumo, estado operativo y fallas.  
+El sistema integra una **API REST**, un **dashboard administrativo web**, una **aplicación Wear OS**, el **prototipo de una aplicación móvil**, y sensores conectados que envían información sobre consumo, estado operativo y fallas.  
+
 El prototipo aborda problemáticas comunes como luminarias fuera de servicio, falta de información precisa, altos costos operativos y ausencia de herramientas de monitoreo centralizado.
 
 Con Ecoluz Urbana, las instituciones pueden:  
@@ -44,61 +45,58 @@ Implementar un prototipo funcional de monitoreo inteligente de luminarias capaz 
 
 ##  Objetivos Específicos  
 1. Visualizar el estado operativo de luminarias en tiempo real.  
-2. Procesar datos IoT y almacenar consumo energético en la base de datos.  
+2. Procesar datos IoT y almacenar consumo energético.  
 3. Integrar un dashboard web con mapas interactivos y gráficas.  
-4. Implementar autenticación segura mediante JWT y roles.  
+4. Implementar autenticación segura con JWT y roles.  
 5. Crear un prototipo navegable en Figma y avances programados de la app.  
-6. Proveer herramientas para técnicos mediante wearable.  
+6. Proveer herramientas para técnicos mediante un wearable.
 
 ---
 
 ##  Organigrama del Equipo LAKID  
 
-- Líder del Proyecto  
-- Backend  
-- Frontend  
-- UX/UI  
-- Documentación  Luis Iván Márquez Azuara  
-        │  
-        ├── Líder del Proyecto
-        │
-        ├── Khalid Reyes Silva ─── Backend
-        │
-        ├── Área Frontend
-        │        ├── Luis Iván Márquez A.  
-        │        └── Aldo Tolentino Domingo
-        │
-        └── Documentación  
-                 └── Angel David Reyes Téllez
-
+```
+                 ┌─────────────────────────┐
+                 │  Líder del Proyecto     │
+                 │  Luis Iván Márquez A.   │
+                 └─────────────┬───────────┘
+                               │
+        ┌──────────────────────┼─────────────────────────┐
+        │                      │                         │
+        ▼                      ▼                         ▼
+┌───────────────┐     ┌────────────────┐        ┌───────────────────────┐
+│    Backend     │     │    Frontend    │        │    Documentación      │
+│ Khalid Reyes   │     │ Luis Iván M.A. │        │ Angel D. Reyes T.     │
+│                │     │ Aldo T. D.     │        │                       │
+└───────────────┘     └────────────────┘        └───────────────────────┘
+```
 
 ---
 
-## Tabla de Roles  
+##  Tabla de Roles  
 | Integrante | Matrícula | Rol Principal | Responsabilidades |
 |-----------|-----------|----------------|------------------|
-| **Angel David Reyes Téllez** | 220432 |  Documentación | API, PHVA, CI/CD, pruebas |
-| **Brayan Khalid Reyes Silva** | 220244 | Backend | Api, mapas, integración UI |
-| **Aldo Tolentino Domingo** | 220700 | Móvil / Frontend | App smartwatch, lógica de consumo |
-| **Luis Iván Márquez Azuara** | 220401 | Lider / FrontEnd | Consumo API Mapas |
+| **Angel David Reyes Téllez** | 220432 | Documentación | API, PHVA, CI/CD, pruebas |
+| **Brayan Khalid Reyes Silva** | 220244 | Backend | API, endpoints, base de datos |
+| **Aldo Tolentino Domingo** | 220700 | Móvil / Frontend | App smartwatch, interfaz móvil |
+| **Luis Iván Márquez Azuara** | 220401 | Líder / Frontend | Consumo de API, mapas, coordinación |
 
 ---
 
-## Diagrama de Gantt (Cronograma)
+##  Diagrama de Gantt
 
-| Actividad                                   | Semana 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
-|---------------------------------------------|----------|---|---|---|---|---|---|---|---|----|----|----|----|----|
-| Análisis y levantamiento de requisitos      | ████████ | ████████ |   |   |   |   |   |   |   |    |    |    |    |    |
-| Diseño UX (sketches, wireframes, mockups)   |          | ████████ | ████████ | ████████ |   |   |   |   |   |    |    |    |    |    |
-| Desarrollo API Backend (Node.js + MongoDB)  |          |         | ████████ | ████████ | ████████ | ████████ | ████████ |   |   |    |    |    |    |    |
-| Desarrollo Dashboard Web (React/Vue)        |          |         |         |         | ████████ | ████████ | ████████ | ████████ | ████████ |    |    |    |    |    |
-| Desarrollo Wear OS / App Técnico            |          |         |         |         |         |         | ████████ | ████████ | ████████ | ████████ |    |    |    |    |
-| Integración de Módulos                      |          |         |         |         |         |         |         | ████████ | ████████ | ████████ |    |    |    |    |
-| Pruebas (H)                                 |          |         |         |         |         |         |         |         | ████████ | ████████ | ████████ |    |    |    |
-| Verificación (V)                            |          |         |         |         |         |         |         |         |         |         | ████████ | ████████ |    |    |
-| Correcciones finales / Ajustes              |          |         |         |         |         |         |         |         |         |         |         | ████████ | ████████ |    |
-| Presentación y entrega final                |          |         |         |         |         |         |         |         |         |         |         |         | ████████ | ████████ |
-
+| Actividad                                   | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | S10 | S11 | S12 | S13 | S14 |
+|---------------------------------------------|----|----|----|----|----|----|----|----|----|-----|-----|-----|-----|-----|
+| Análisis y levantamiento de requisitos      | ███ | ███ |    |    |    |    |    |    |    |     |     |     |     |     |
+| Diseño UX (sketches, wireframes, mockups)   |    | ███ | ███ | ███ |    |    |    |    |    |     |     |     |     |     |
+| Desarrollo API Backend                      |    |     | ███ | ███ | ███ | ███ | ███ |    |    |     |     |     |     |     |
+| Desarrollo Dashboard Web                    |    |     |     |     | ███ | ███ | ███ | ███ | ███ |     |     |     |     |     |
+| Desarrollo Wear OS / App Técnico            |    |     |     |     |     |     | ███ | ███ | ███ | ███ |     |     |     |     |
+| Integración de Módulos                      |    |     |     |     |     |     |     | ███ | ███ | ███ |     |     |     |     |
+| Pruebas (H)                                 |    |     |     |     |     |     |     |     | ███ | ███ | ███ |     |     |     |
+| Verificación (V)                            |    |     |     |     |     |     |     |     |     |     | ███ | ███ |     |     |
+| Correcciones finales                        |    |     |     |     |     |     |     |     |     |     |     | ███ | ███ |     |
+| Presentación y entrega final                |    |     |     |     |     |     |     |     |     |     |     |     | ███ | ███ |
 
 ---
 
@@ -107,12 +105,12 @@ Implementar un prototipo funcional de monitoreo inteligente de luminarias capaz 
 2. Gestión de usuarios y roles.  
 3. CRUD de luminarias.  
 4. Visualización en mapa interactivo.  
-5. Recepción de datos IoT (consumo, lúmenes, estado).  
+5. Recepción de datos IoT.  
 6. Consulta de estadísticas energéticas.  
-7. Panel de alertas por fallas.  
+7. Panel de alertas.  
 8. Historial de mantenimiento.  
 9. Filtrado por zona, fecha, estado.  
-10. Consulta de luminarias desde Wear OS.  
+10. Consulta de luminarias vía Wear OS.
 
 ---
 
@@ -121,59 +119,54 @@ Implementar un prototipo funcional de monitoreo inteligente de luminarias capaz 
 2. Dashboard con carga < 2 s.  
 3. Disponibilidad ≥ 99 %.  
 4. Seguridad TLS + JWT + OWASP.  
-5. Compatibilidad: Chrome, Firefox, Edge; Wear OS 3+.  
+5. Compatibilidad con navegadores modernos + Wear OS 3+.
 
 ---
 
 ##  Historias de Usuario  
 **HU-01 – Administrador**  
-*Como administrador quiero iniciar sesión para acceder al sistema de monitoreo.*  
+Como administrador quiero iniciar sesión para acceder al sistema.
 
 **HU-02 – Operador**  
-*Como operador quiero ver las luminarias en el mapa para identificar el estado de cada una.*  
+Como operador quiero visualizar luminarias en un mapa para conocer su estado.
 
-**HU-03 – Técnico de campo**  
-*Como técnico quiero consultar las luminarias cercanas desde el smartwatch para agilizar reparaciones.*  
+**HU-03 – Técnico**  
+Como técnico quiero ver luminarias cercanas desde el smartwatch para agilizar reparaciones.
 
-*(Agregar más hasta completar mínimo 10)*
+*(Agregar más hasta llegar a 10)*
 
 ---
 
-##  Sketches  
-> *(Insertar imagen o link Figma)*  
+##  Sketches / Wireframes / Mockups  
+*(Insertar imágenes o links de Figma)*
 
-##  Wireframes  
-> *(Insertar imagen o link Figma)*  
-
-##  Mockups  
-> *(Insertar imagen o link Figma)*  
+---
 
 ##  Prototipo Navegacional  
-> *(Insertar link de Figma)*  
+*(Insertar link Figma)*
 
 ---
 
 ##  API – Repositorio y Documentación  
-Repositorio API: 
-Documentación Swagger: *(Insertar link)*  
+Repositorio API: *(insertar link)*  
+Documentación Swagger: *(insertar link)*
 
 ---
 
-## Prototipo Programado (Avances)  
-- Dashboard React: *(link a repo o deploy)*  
-- API Node.js: *(repo / deploy)*  
-- Wear OS: *(repo o capturas)*  
+##  Avances Programados  
+- Dashboard React  
+- API Node.js  
+- Wear OS  
 
 ---
 
 ##  Presentación  
-> *(Insertar)*  
+*(Insertar PDF o link)*
 
 ---
 
 ##  Conclusiones  
-Ecoluz Urbana demuestra la viabilidad técnica de un sistema de monitoreo inteligente basado en IoT, logrando integrar sensores, API, dashboard y wearable en un prototipo funcional.  
-Las pruebas indican que el sistema puede escalar, ofrece tiempos de respuesta adecuados y mejora la gestión del alumbrado público mediante información precisa y en tiempo real.  
+Ecoluz Urbana demuestra la viabilidad técnica de un sistema de monitoreo inteligente basado en IoT, integrando sensores, API, dashboard y wearable en un prototipo funcional. Las pruebas confirman que el sistema puede escalar, mantener estabilidad y mejorar la gestión del alumbrado público mediante información precisa y en tiempo real.
 
 ---
 
