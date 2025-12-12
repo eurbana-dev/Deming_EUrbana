@@ -47,8 +47,8 @@ Este documento reúne la esencia visual de la marca: colores, tipografías, icon
 
 > _Icono principal de E. Urbana basado en una luminaria pública._
 
-<!-- Inserta aquí tu imagen del logo -->
-![Logo E.Urbana](Resources/EUrbanalogo.svg)
+
+<img src="Resources/EUrbanalogo.svg" alt="Logo E.Urbana" width="300"/>
 
 </div>
 
@@ -70,7 +70,7 @@ El sistema de color define la atmósfera de la marca, inspirada en tecnología, 
 
 <div align="center">
 
-<!-- Inserta la captura del apartado de colores -->
+
 ![Color System](Resources/Colors.png)
 
 </div>
@@ -94,7 +94,7 @@ La tipografía oficial del sistema es limpia, moderna y diseñada para garantiza
 
 <div align="center">
 
-<!-- Inserta la captura de la tipografía -->
+ 
 ![Typography](Resources/Typography.png)
 
 </div>
@@ -117,7 +117,7 @@ Los íconos están construidos sobre una cuadrícula geométrica y siguen un est
 
 <div align="center">
 
-<!-- Inserta aquí la captura de iconografía -->
+ 
 ![Iconography](Resources/Iconography.png)
 
 </div>
