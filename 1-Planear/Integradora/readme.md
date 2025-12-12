@@ -137,12 +137,13 @@ Como técnico quiero ver luminarias cercanas desde el smartwatch para agilizar r
 ---
 
 ##  Sketches / Wireframes / Mockups  
-*(Insertar imágenes o links de Figma)*
+[*Sketches*](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=1-5)
+[*Mockups8](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=1-2)
 
 ---
 
 ##  Prototipo Navegacional  
-*(Insertar link Figma)*
+[*(Figma)*](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=1-4)
 
 ---
 
