@@ -132,7 +132,26 @@ Como operador quiero visualizar luminarias en un mapa para conocer su estado.
 **HU-03 – Técnico**  
 Como técnico quiero ver luminarias cercanas desde el smartwatch para agilizar reparaciones.
 
-*(Agregar más hasta llegar a 10)*
+**HU-04 – Administrador**
+Como administrador quiero registrar nuevas luminarias para mantener actualizado el inventario.
+
+**HU-05 – Operador**
+Como operador quiero filtrar luminarias por estado (activo, apagado, fallando) para identificar rápidamente las que requieren atención.
+
+**HU-06 – Técnico**
+Como técnico quiero recibir notificaciones en mi smartwatch cuando una luminaria falle para atenderla de inmediato.
+
+**HU-07 – Administrador**
+Como administrador quiero generar reportes de fallas por zona para tomar decisiones estratégicas.
+
+**HU-08 – Operador**
+Como operador quiero actualizar el estado de una luminaria para reflejar cambios después de una inspección.
+
+**HU-09 – Técnico**
+Como técnico quiero registrar la reparación de una luminaria desde mi smartwatch para que quede evidencia en tiempo real.
+
+**HU-10 – Administrador**
+Como administrador quiero gestionar usuarios y asignar roles para controlar el acceso al sistema.
 
 ---
 
