@@ -9,18 +9,15 @@
   <img src="assets/EUrbanalogo.png" alt="Icono de la Aplicación" width="150"/>
 </p>
 
-### Logotipo del Producto  
-*(Insertar imagen)*  
 
 ### Paleta de Colores  
-- Primario: #  
-- Secundario: #  
-- Acento: #  
-*(Insertar imagen)*  
+- Primario: #1FA1AE
+- Secundario: #0A67AC
+
 
 ### Tipografías  
-- Títulos  
-- Cuerpo de texto  
+- Títulos:  Inter-google font
+- Cuerpo de texto:  Mulish-Google font
 
 ---
 
