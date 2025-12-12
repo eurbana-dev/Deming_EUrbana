@@ -48,18 +48,18 @@ Este documento describe cada módulo visual, su propósito, arquitectura de info
 ### **Colores de la aplicacion**
 | Color | Hex | Uso |
 |-------|------|------|
-| Azul Urbano | **#0A84FF** | Elementos principales, títulos, iconografía |
+| Azul Urbano | **#1FA1AE** | Elementos principales, títulos, iconografía |
 | Verde Operativo | **#2ECC71** | Indicadores de energía y luminarias activas |
 | Amarillo Alerta | **#F1C40F** | Advertencias, luminarias con fallas menores |
 | Rojo Crítico | **#E74C3C** | Errores, luminarias fuera de servicio |
 | Gris  | **#ECF0F1** | Fondos y tarjetas |
 
 ### **Tipografía**
-- **SF Pro Display** — títulos
-- **SF Pro Text** — contenido y botones
+- **Inter** — Extra light - Bold
+- **Mulish** — Regular - Semibold
 
 ### **Diseño**
-- Esquinas redondeadas 16px  
+- Esquinas redondeadas 10px  
 - Uso extensivo de cards 
 - Iconografía lineal minimalista  
 
