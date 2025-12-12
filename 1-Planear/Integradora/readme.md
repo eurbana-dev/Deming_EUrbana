@@ -4,7 +4,14 @@
 ---
 
 ##  Identidad de Imagen  
-### Logotipo de la Empresa  
+### Logotipo de la empresa  
+<p align="center">
+  <img src="assets/LAKID.png" alt="Icono de LAKID" width="150"/>
+</p>
+
+
+##  Identidad de Imagen  
+### Logotipo del producto  
 <p align="center">
   <img src="assets/EUrbanalogo.png" alt="Icono de la Aplicación" width="150"/>
 </p>
