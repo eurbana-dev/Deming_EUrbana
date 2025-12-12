@@ -187,7 +187,7 @@ Documentación Swagger: https://github.com/eurbana-dev/Api_Eurbana/tree/main/Swa
 ---
 
 ##  Presentación  
-*(Insertar PDF o link)*
+[Ver presentación (PDF)](Presentacion/Presentacion_Eco.pdf)
 
 ---
 
