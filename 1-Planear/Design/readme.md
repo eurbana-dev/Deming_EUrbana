@@ -9,6 +9,7 @@
 ![Mobile UI](https://img.shields.io/badge/Plataforma-iOS%20%2F%20Android-success)
 ![Diseño](https://img.shields.io/badge/Diseño-UI%2FUX%20Mobile-purple)
 
+
 </div>
 
 ---
@@ -20,7 +21,7 @@
    - [Splash Screen](#1-pantalla-de-splash)
    - [Inicio de Sesión](#2-pantalla-de-inicio-de-sesión)
    - [Resumen General](#3-resumen-general-dashboard)
-   - [Estadísticas Avanzadas](#4-estadísticas-avanzadas)
+   - [Estadísticas](#4-estadísticas)
    - [Módulo de Mantenimiento](#5-módulo-de-mantenimiento)
    - [Perfil de Usuario](#6-perfil-de-usuario)
    - [Login con Google](#7-login-con-google)
@@ -37,6 +38,9 @@
 #  **Introducción**
 _E. Urbana_ es una aplicación móvil enfocada en la gestión integral de luminarias urbanas inteligentes.  
 Este documento describe cada módulo visual, su propósito, arquitectura de información y flujo de navegación.
+
+
+[![Figma](https://img.shields.io/badge/Figma-Ver%20Diseño-F24E1E?logo=figma&logoColor=white)](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=0-1&t=5wdAFZfU45gYOkHx-1)
 
 ---
 
@@ -93,7 +97,7 @@ Pantalla diseñada para acceso seguro con autenticación por correo y OAuth Goog
 ### **Componentes**
 - Campo de email con validación inmediata  
 - Campo de contraseña con botón "ver/ocultar"  
-- Botón azul corporativo “Iniciar sesión"  
+- Botón azul “Iniciar sesión"  
 - Botón blanco “Continuar con Google”  
 - Enlaces a:
   - Recuperación de contraseña  
@@ -154,7 +158,7 @@ Módulo analítico con gráficas interactivas de rendimiento energético.
 ![Mantenimiento](Resources/img5.png)
 
 ### **Descripción**
-Pantalla para gestión integral del área técnica.
+Pantalla para gestión del área técnica.
 
 ### **Componentes**
 - Contadores operativos:
@@ -224,7 +228,7 @@ Formulario técnico completo para intervención operativa.
 # 11. **Chat de Soporte**
 ![Chat](Resources/img11.png)
 
-Mensajería entre técnicos y soporte urbano.
+Mensajería entre técnicos y soporte.
 
 ---
 
@@ -235,7 +239,7 @@ Confirmación visual de envío de reportes o mensajes.
 
 ---
 
-# 🔁 **Flujo General de la Aplicación**
+# **Flujo General de la Aplicación**
 1. Splash  
 2. Inicio de sesión  
 3. Dashboard  
@@ -251,6 +255,8 @@ Confirmación visual de envío de reportes o mensajes.
 
 ---
 
-# 👨‍💻 **Créditos**
-**Diseño y documentación UI/UX corporativa — E. Urbana**  
-2025 · Sistema de Gestión Urbana Inteligente
+# **Créditos**
+**Diseño  UI/UX E. Urbana**  
+Diseñado por: [luisivmaraz](https://github.com/luisivmaraz)
+
+
