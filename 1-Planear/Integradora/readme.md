@@ -3,27 +3,27 @@
 
 ---
 
-##  Identidad de Imagen  
+
+### Logotipo de la empresa  
+<p align="center">
+  <img src="assets/lakid.png" alt="Icono de LAKID" width="150"/>
+</p>
 
 
-
-### Logotipo de la Empresa  
+### Logotipo del producto  
 <p align="center">
   <img src="assets/EUrbanalogo.png" alt="Icono de la Aplicación" width="150"/>
 </p>
 
-### Logotipo del Producto  
-*(Insertar imagen)*  
 
 ### Paleta de Colores  
-- Primario: #  
-- Secundario: #  
-- Acento: #  
-*(Insertar imagen)*  
+- Primario: #1FA1AE
+- Secundario: #0A67AC
+
 
 ### Tipografías  
-- Títulos  
-- Cuerpo de texto  
+- Títulos:  Inter-google font
+- Cuerpo de texto:  Mulish-Google font
 
 ---
 
@@ -138,17 +138,37 @@ Como operador quiero visualizar luminarias en un mapa para conocer su estado.
 **HU-03 – Técnico**  
 Como técnico quiero ver luminarias cercanas desde el smartwatch para agilizar reparaciones.
 
-*(Agregar más hasta llegar a 10)*
+**HU-04 – Administrador**
+Como administrador quiero registrar nuevas luminarias para mantener actualizado el inventario.
+
+**HU-05 – Operador**
+Como operador quiero filtrar luminarias por estado (activo, apagado, fallando) para identificar rápidamente las que requieren atención.
+
+**HU-06 – Técnico**
+Como técnico quiero recibir notificaciones en mi smartwatch cuando una luminaria falle para atenderla de inmediato.
+
+**HU-07 – Administrador**
+Como administrador quiero generar reportes de fallas por zona para tomar decisiones estratégicas.
+
+**HU-08 – Operador**
+Como operador quiero actualizar el estado de una luminaria para reflejar cambios después de una inspección.
+
+**HU-09 – Técnico**
+Como técnico quiero registrar la reparación de una luminaria desde mi smartwatch para que quede evidencia en tiempo real.
+
+**HU-10 – Administrador**
+Como administrador quiero gestionar usuarios y asignar roles para controlar el acceso al sistema.
 
 ---
 
 ##  Sketches / Wireframes / Mockups  
-*(Insertar imágenes o links de Figma)*
+[*Sketches*](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=1-5)
+[*Mockups8](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=1-2)
 
 ---
 
 ##  Prototipo Navegacional  
-*(Insertar link Figma)*
+[*(Figma)*](https://www.figma.com/design/h80hDv7A0ptkayCYpxX1Cu/E.-Urbana?node-id=1-4)
 
 ---
 
